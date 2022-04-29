@@ -1,18 +1,17 @@
 import React from "react";
+import './input.css';
 
-const input = () => {
+const Input = ({setInputText}) => {
+const inputTextHandler = (e) => {
+    setInputText(e.target.value);
+}
     return (
-<form>
-    <input type="text" className="todos-imput" />
-    <button type="submit" className="submit-button" >
-<i className="fas fa-plus-square"></i>
+<div className="form">
+    <input onChange={inputTextHandler} type="text" className="todos-imput" placeholder="Enter new task" />
+    <button className="add-task" type="submit">Add task</button>
+</div>
+    
 
-
-    </button>
-    <div className="selection">
-        
-    </div>
-
-</form>
     );
 }
+export default Input;
