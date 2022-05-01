@@ -1,3 +1,13 @@
 .add-task{
-    color: red;
+    background: #4b4bcd;
+    color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.form{
+    margin-top: 10px;
+}
+input{
+    padding: 5px;
 }

@@ -1,0 +1,7 @@
+.todo-container{
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+}
+.todos-list{
+    margin: 10px;
+}

@@ -12,13 +12,12 @@ function Todo({text, todo, todos, setTodos}) {
                     ...item, completed: !item.completed
                 }
             }
-            return item
+            return item;
         }))
     }
   return (
     <div className='todo'>
         <li onClick={completeHandler} className={`todos-list ${todo.completed ? "completed" : " "}`}>{text}</li>
-        
         <button onClick={deleteHandler} className='delete'>delete</button>
     </div>
   )

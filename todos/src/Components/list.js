@@ -1,5 +1,6 @@
 import React from 'react'
 import Todo from './Todo';
+import './list.css';
 
 function List({todos, setTodos}) {
   return (
