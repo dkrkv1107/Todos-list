@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <header>Things To do</header>
-      <List />
-      <Input setInputText={setInputText}/>
+      <List todos={todos} setTodos={setTodos} />
+      <Input inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText}/>
     </div>
   );
 }
